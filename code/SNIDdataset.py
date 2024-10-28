@@ -316,6 +316,7 @@ def plotDataset(dataset, figsize):
 
     """
     fig = plt.figure(figsize=figsize)
+    plt.set_xlabel(r"Wavelength [$\AA$]")
     count = 0
     for snname in list(dataset.keys()):
         snobj = dataset[snname]
